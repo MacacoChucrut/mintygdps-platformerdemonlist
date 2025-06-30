@@ -1,0 +1,48 @@
+{
+    "id": 2737,
+    "name": "loppa",
+    "author": "pancakepuzzle",
+    "creators": ["pancakepuzzle"],
+    "verifier": "pancakepuzzle",
+    "verification": "https://www.youtube.com/watch?v=_-n4glnD3M4",
+    "percentToQualify": "100",
+    "records": [
+ {
+            "user": "MacacoChucrut",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+{
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+{
+            "user": "imnotpkpi",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+{
+            "user": "Quantium9",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+  },
+        {
+            "user": "OhNoItsAle",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+  },
+        {
+            "user": "Anduval",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+    ]
+    "tags": ["Timings", "Cube", "Robot"]
+}
