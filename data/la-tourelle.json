@@ -60,6 +60,12 @@
             "link": "#",
             "percent": 100,
             "mobile": false
+        },
+        {
+            "user": "Dino",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
         }
     ],
     "tags": ["Timings", "Cube", "Former Top 1"]
