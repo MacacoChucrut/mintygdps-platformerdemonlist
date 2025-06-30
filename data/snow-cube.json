@@ -1,9 +1,9 @@
 {
     "id": 3105,
     "name": "snow cube",
-    "author": "imnotpkpi",
-    "creators": ["imnotpkpi"],
-    "verifier": "imnotpkpi",
+    "author": "ImNotPkpi",
+    "creators": ["ImNotPkpi"],
+    "verifier": "ImNotPkpi",
     "verification": "https://youtu.be/UPB4uBMX3iI?si=XdK9CRA0gVTU23GV",
     "percentToQualify": "100",
     "records": [
@@ -15,6 +15,4 @@
         }
     ],
     "tags": ["Timings", "Cube", "Gimmicky"]
-
 } 
- 
