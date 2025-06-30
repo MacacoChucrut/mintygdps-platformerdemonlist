@@ -1,0 +1,23 @@
+{
+    "id": 1,
+    "name": "Name",
+    "author": "Publisher",
+    "creators": ["Creator"],
+    "verifier": "Verifier",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+        {
+            "user": "Name",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Name",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        }
+    ]
+}
