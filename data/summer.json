@@ -4,11 +4,10 @@
     "author": "pancakepuzzle",
     "creators": ["pancakepuzzle"],
     "verifier": "pancakepuzzle",
-    "verification": https://www.youtube.com/watch?v=Pen7rsEPgQ4",
+    "verification": "https://www.youtube.com/watch?v=Pen7rsEPgQ4",
     "percentToQualify": "100",
     "records": [
-
-    {
+        {
             "user": "MacacoChucrut",
             "link": "#",
             "percent": 100,
@@ -19,7 +18,8 @@
             "link": "#",
             "percent": 100,
             "mobile": false
-    {
+        },
+        {
             "user": "Gonci",
             "link": "#",
             "percent": 100,
@@ -30,7 +30,8 @@
             "link": "#",
             "percent": 100,
             "mobile": false
-    {
+        },
+        {
             "user": "Dact",
             "link": "#",
             "percent": 100,
@@ -41,16 +42,19 @@
             "link": "#",
             "percent": 100,
             "mobile": false
-    {
+        },
+        {
             "user": "Anduval",
             "link": "#",
             "percent": 100,
             "mobile": false
         },
         {
-            "user": "imnotpkpi",
+            "user": "ImNotPkpi",
             "link": "#",
             "percent": 100,
             "mobile": false
-    "tags": ["Timings", "Cube", "Robot", "Former Top 1"]
+        }
+    ],
+    "tags": ["Cube", "Robot", "Timings", "Former Top 1"]
 }
