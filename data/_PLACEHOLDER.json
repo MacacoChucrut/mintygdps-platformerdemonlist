@@ -1,20 +1,14 @@
 {
-    "id": 100,
-    "name": "Placeholder",
-    "author": "Publisher",
-    "creators": ["Creator"],
-    "verifier": "Verifier",
-    "verification": "#",
+    "id": 3105,
+    "name": "snow cube",
+    "author": "imnotpkpi",
+    "creators": ["imnotpkpi"],
+    "verifier": "imnotpkpi",
+    "verification": "https://youtu.be/UPB4uBMX3iI?si=XdK9CRA0gVTU23GV",
     "percentToQualify": "100",
     "records": [
         {
-            "user": "Name",
-            "link": "#",
-            "percent": 100,
-            "mobile": false
-        },
-        {
-            "user": "Name",
+            "user": "Herobrain",
             "link": "#",
             "percent": 100,
             "mobile": false
