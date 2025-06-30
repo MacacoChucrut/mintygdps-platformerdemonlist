@@ -1,0 +1,36 @@
+{
+    "id": 3368,
+    "name": "summer II",
+    "author": "pancakepuzzle",
+    "creators": ["pancakepuzzle"],
+    "verifier": "pancakepuzzle",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+ {
+            "user": "MacacoChucrut",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+{
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+{
+            "user": "imnotpkpi",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+{
+            "user": "Quantium",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+    ]
+    "tags": [""]
+}
