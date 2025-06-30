@@ -1,0 +1,50 @@
+{
+    "id": 2779,
+    "name": "Nano virus",
+    "author": "Quantium9",
+    "creators": ["Quantium9"],
+    "verifier": "Quantium9",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+ {
+            "user": "MacacoChucrut",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+{
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+{
+            "user": "imnotpkpi",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+{
+            "user": "Anduval",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+{
+            "user": "Dact",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+{
+            "user": "OhNoItsAle",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+
+
+    ]
+    "tags": ["Timings", "Cube", "Ball", "istg this isnt a medium demon herobrain"]
+}
