@@ -14,16 +14,16 @@
             "mobile": false
         },
         {
+            "user": "Mop",
+            "link": "https://youtu.be/258J4Rl30Qk?t=242",
+            "percent": 100,
+            "mobile": true
+        },
+        {
             "user": "Herobrain",
             "link": "#",
             "percent": 100,
             "mobile": false
-        },
-        {
-            "user": "ImNotPkpi",
-            "link": "#",
-            "percent": 100,
-            "mobile": true
         },
         {
             "user": "Quantium9",
@@ -44,11 +44,17 @@
             "mobile": true
         },
         {
+            "user": "ImNotPkpi",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+        {
             "user": "Dino",
             "link": "#",
             "percent": 100,
             "mobile": false
-        }
+        },
     ],
     "tags": ["Cube", "Robot", "Timings", "Former Top 1"]
 }
