@@ -1,0 +1,42 @@
+{
+    "id": 3287,
+    "name": "Epitet",
+    "author": "A01",
+    "creators": ["A01"],
+    "verifier": "A01",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+        {
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Quantium9",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+        {
+            "user": "MacacoChucrut",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Virek",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Dino",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        }
+    ],
+    "tags": ["Ship", "Minigame", "No Checkpoints"]
+}
