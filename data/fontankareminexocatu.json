@@ -1,1 +1,48 @@
-
+{
+    "id": 3283,
+    "name": "fontankareminexocatu",
+    "author": "Dino",
+    "creators": ["Dino"],
+    "verifier": "Dino",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+        {
+            "user": "MacacoChucrut",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Gonci",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Virek",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Quantium9",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+        {
+            "user": "ImNotPkpi",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+        {
+            "user": "pancakepuzzle",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        }
+    ],
+    "tags": ["Robot", "Ship", "Timings", "2P"]
+}
