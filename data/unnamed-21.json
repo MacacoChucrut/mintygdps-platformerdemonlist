@@ -1,0 +1,30 @@
+{
+    "id": 3242,
+    "name": "Unnamed 21",
+    "author": "A01",
+    "creators": ["A01"],
+    "verifier": "A01",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+        {
+            "user": "ImNotPkpi",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
+        },
+        {
+            "user": "MacacoChucrut",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": 
+        }
+    ],
+    "tags": ["Robot", "Cube", "Timings"]
+}
