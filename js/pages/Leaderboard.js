@@ -99,7 +99,12 @@ export default {
     },
     async mounted() {
         const [leaderboard, err] = await fetchLeaderboard();
-        this.leaderboard = leaderboard;
+        
+        // Banned players go here
+        const excludedUsers = ["None", "ribbonera", "Artimae", "Dino"];
+
+        this.leaderboard = leaderboard.filter(player => !excludedUsers.includes(player.user));
+        
         this.err = err;
         this.loading = false;
         this.applyRankEffects();
