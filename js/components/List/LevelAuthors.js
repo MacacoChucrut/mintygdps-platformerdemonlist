@@ -1,9 +1,5 @@
 export default {
     props: {
-        author: {
-            type: String,
-            required: true,
-        },
         creators: {
             type: Array,
             required: true,
@@ -44,10 +40,6 @@ export default {
                     <span>{{ verifier }}</span>
                 </p>
             </template>
-            <div class="type-title-sm">Publisher</div>
-            <p class="type-body">
-                <span>{{ author }}</span>
-            </p>
         </div>
     `,
 
