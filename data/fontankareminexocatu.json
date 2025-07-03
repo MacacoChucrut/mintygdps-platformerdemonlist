@@ -42,6 +42,12 @@
             "link": "#",
             "percent": 100,
             "mobile": false
+        },
+        {
+            "user": "Mop",
+            "link": "https://youtu.be/au-DIe24vxk?si=pyEbA4cHdsZ9nwyd",
+            "percent": 100,
+            "mobile": true
         }
     ],
     "tags": ["Robot", "Ship", "Timings", "2P"]
