@@ -48,6 +48,12 @@
             "link": "https://youtu.be/au-DIe24vxk?si=pyEbA4cHdsZ9nwyd",
             "percent": 100,
             "mobile": true
+        },
+        {
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
         }
     ],
     "tags": ["Robot", "Ship", "Timings", "2P"]
