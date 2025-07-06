@@ -1,0 +1,12 @@
+{
+    "id": 100,
+    "name": "test",
+    "author": "test",
+    "creators": ["test"],
+    "verifier": "None",
+    "verification": "https://youtu.be/wSRhKVwquE0",
+    "percentToQualify": "100",
+    "records": [
+    ],
+    "tags": ["Cube", "Fast-Paced", "XL", "Former Top 1"]
+}
