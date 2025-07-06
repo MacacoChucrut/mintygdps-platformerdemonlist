@@ -2,7 +2,7 @@
     "id": 100,
     "name": "test",
     "creators": ["test"],
-    "verifier": "None",
+    "verifier": "test",
     "verification": "https://youtu.be/wSRhKVwquE0",
     "percentToQualify": "100",
     "records": [
