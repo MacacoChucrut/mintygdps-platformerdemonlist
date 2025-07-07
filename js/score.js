@@ -11,11 +11,11 @@ const scale = 1;
  * @returns {Number}
  */
 export function score(rank, percent, minPercent) {
-    if (rank > 150) {
+    if (rank > 50) {
         return 0;
     }
 
-let score = (-50*Math.pow(rank-1, 0.5) + 300) *
+let score = (-61.14*Math.pow(rank-1, 0.4) + 300) *
         ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
 
     score = Math.max(0, score);
