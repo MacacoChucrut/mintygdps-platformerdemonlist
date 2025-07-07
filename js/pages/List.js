@@ -54,7 +54,7 @@ export default {
                         </li>
                     </ul>
                     <h2>Victors</h2>
-                    <p v-if="selected + 1 > 50>This level has fallen into the Legacy List and no longer accepts new records.</p>
+                    <p v-if="selected + 1 > 50">This level has fallen into the Legacy List and no longer accepts new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
