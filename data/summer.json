@@ -66,7 +66,13 @@
             "link": "#",
             "percent": 100,
             "mobile": false
-        }       
+        },
+        {
+            "user": "goofyman",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        }
     ],
     "tags": ["Timings", "Cube", "Robot", "Former Top 1", "Most Liked <3"]
 }
