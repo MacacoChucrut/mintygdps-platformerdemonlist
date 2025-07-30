@@ -48,6 +48,12 @@
             "link": "https://youtu.be/258J4Rl30Qk?si=2hty5S4-9mTQkMzC",
             "percent": 100,
             "mobile": true
+        },
+        {
+            "user": "goofyman",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
         }
     ],
     "tags": ["Timings", "Cube", "Ball", "Former Top 1"]
