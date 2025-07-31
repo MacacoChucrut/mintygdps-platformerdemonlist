@@ -36,6 +36,12 @@
             "link": "#",
             "percent": 100,
             "mobile": true
+        },
+        {
+            "user": "goofyman",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
         }
     ],
     "tags": ["Robot", "Timings"]
