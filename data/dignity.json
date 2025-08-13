@@ -6,6 +6,12 @@
     "verification": "#",
     "percentToQualify": "100",
     "records": [
+        {
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        }
     ],
     "tags": ["Ship", "Minigame"]
 }
