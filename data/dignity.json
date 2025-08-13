@@ -1,0 +1,11 @@
+{
+    "id": 3685,
+    "name": "Dignity",
+    "creators": ["A01"],
+    "verifier": "A01",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+    ],
+    "tags": ["Ship", "Minigame"]
+}
