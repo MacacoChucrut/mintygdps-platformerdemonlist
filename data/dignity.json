@@ -11,6 +11,12 @@
             "link": "#",
             "percent": 100,
             "mobile": false
+        },
+        {
+            "user": "ImNotPkpi",
+            "link": "#",
+            "percent": 100,
+            "mobile": true
         }
     ],
     "tags": ["Ship", "Minigame"]
