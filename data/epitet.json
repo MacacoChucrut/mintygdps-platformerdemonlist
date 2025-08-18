@@ -1,7 +1,6 @@
 {
     "id": 3287,
     "name": "Epitet",
-    "author": "A01",
     "creators": ["A01"],
     "verifier": "A01",
     "verification": "#",
@@ -32,7 +31,7 @@
             "mobile": false
         },
         {
-            "user": "Dino",
+            "user": "goofyman",
             "link": "#",
             "percent": 100,
             "mobile": false
