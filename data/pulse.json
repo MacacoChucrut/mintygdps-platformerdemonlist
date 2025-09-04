@@ -35,6 +35,12 @@
             "link": "https://youtu.be/82JfpnPZnRo?si=ZfptawXx0-Xs4bcJ",
             "percent": 100,
             "mobile": false
+        },
+        {
+            "user": "Virek",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
         }
     ],
     "tags": ["Overall", "Rooms"]
