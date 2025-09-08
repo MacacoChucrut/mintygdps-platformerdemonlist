@@ -35,6 +35,12 @@
             "link": "#",
             "percent": 100,
             "mobile": false
+        },
+        {
+            "user": "Mop",
+            "link": "https://youtu.be/QDCRuff1KLQ?si=DPASbGrSoaa-70vp",
+            "percent": 100,
+            "mobile": true
         }
     ],
     "tags": ["Ship", "Minigame", "No Checkpoints"]
