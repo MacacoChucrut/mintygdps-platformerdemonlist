@@ -17,6 +17,12 @@
             "link": "#",
             "percent": 100,
             "mobile": true
+        },
+        {
+            "user": "Mop",
+            "link": "https://youtu.be/pldLI0rN1Js?si=UGfUKIUDOOZSwJxA",
+            "percent": 100,
+            "mobile": true
         }
     ],
     "tags": ["Ship", "Minigame"]
