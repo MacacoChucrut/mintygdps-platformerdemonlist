@@ -2,7 +2,7 @@
     {
         "name": "pancakepuzzle Pack",
         "levels": ["summer", "summer II", "loppa"],
-        "reward": 530,
+        "reward": 500,
         "color": "#f3e"
     }
 ]
