@@ -109,6 +109,43 @@ export default {
         });
 
         this.loading = false;
+        
+    // 🖱️ Permitir desplazamiento horizontal arrastrando
+this.$nextTick(() => {
+    const slider = document.querySelector('.packs-grid');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    document.body.classList.add('no-select'); // 🔹 evita selección de texto
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    document.body.classList.remove('no-select'); // 🔹 vuelve a habilitar selección
+});
+
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    document.body.classList.remove('no-select');
+});
+
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.2; // velocidad del desplazamiento
+    slider.scrollLeft = scrollLeft - walk;
+});
+});
+
     },
     methods: {
         getThumbnailFromId,
