@@ -50,6 +50,7 @@
     gap: 2rem;
     padding-right: 2rem;
     max-width: 48rem;
+    animation: fadeInRight 0.4s ease;
 }
 .page-list .level-container .level .level-authors {
     display: grid;
@@ -110,6 +111,7 @@
     background-color: var(--color-error);
     color: var(--color-on-error);
     border-radius: 0.5rem;
+    animation: shakeIn 1s ease;
 }
 .page-list .meta .editors {
     display: flex;
@@ -137,5 +139,25 @@
     margin-right: 7px;
     cursor: default;
     transition: all 0.15s ease;
-    cursor: default;
+}
+
+/* --- Animación de entrada para los niveles --- */
+.page-list .list .level {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Efecto de "uno tras otro" */
+.page-list .list .level:nth-child(1) { animation-delay: 0.05s; }
+.page-list .list .level:nth-child(2) { animation-delay: 0.1s; }
+.page-list .list .level:nth-child(3) { animation-delay: 0.15s; }
+.page-list .list .level:nth-child(4) { animation-delay: 0.2s; }
+/* podés seguir con más si querés */
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

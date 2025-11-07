@@ -3,17 +3,16 @@
 }
 
 .page-leaderboard {
-    height: 100%;
+    height: calc(100vh - 4rem);
     display: grid;
     grid-template-columns: minmax(24rem, 2fr) 3fr;
-    grid-template-rows: max-content 1fr;
     column-gap: 2rem;
     max-width: 80rem;
     margin: 0 auto;
 }
 
 .page-leaderboard > div {
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 .page-leaderboard .error-container {
@@ -29,11 +28,15 @@
 
 .page-leaderboard .board-container,
 .page-leaderboard .player-container {
+    overflow-y: auto;
+    max-height: 100%;
     grid-row: 2;
     padding-block: 2rem;
 }
 
 .page-leaderboard .board-container {
+    overflow-y: auto;
+    max-height: 100%;
     padding-inline: 1rem;
 }
 
