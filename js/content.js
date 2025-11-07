@@ -61,13 +61,12 @@ export async function fetchEditors() {
 export async function fetchLeaderboard() {
     const list = await fetchList();
 
-    // Load packs (optional)
+    // ✅ Load packs using the same logic as fetchPacks() (rewards auto-calculated)
     let packs = [];
     try {
-        const res = await fetch(`${dir}/_packs.json`);
-        if (res.ok) packs = await res.json();
+        packs = await fetchPacks();
     } catch {
-        console.warn('_packs.json not found, skipping pack rewards');
+        console.warn('Error loading packs with rewards');
     }
 
     const scoreMap = {};
@@ -166,12 +165,58 @@ export async function fetchLeaderboard() {
 
 /**
  * Fetches packs (custom groupings of levels)
+ * 🔹 Calcula el reward total sumando los puntos reales de los niveles según el rank
+ * 🔹 Aplica un multiplicador según la dificultad promedio del pack
  */
 export async function fetchPacks() {
     try {
         const res = await fetch(`${dir}/_packs.json`);
         if (!res.ok) throw new Error('Failed to load _packs.json');
         const packs = await res.json();
+
+        // ✅ Cargar lista completa de niveles (para acceder a rank y dificultad)
+        const list = await fetchList();
+
+        packs.forEach(pack => {
+            let totalReward = 0;
+            const ranks = [];
+
+            // Recorrer niveles del pack
+            pack.levels.forEach(levelName => {
+                const entry = list.find(([lvl]) =>
+                    lvl.name.toLowerCase() === levelName.toLowerCase()
+                );
+
+                if (entry) {
+                    const [lvl] = entry;
+                    const rank = list.indexOf(entry) + 1;
+                    ranks.push(rank);
+
+                    // Calcular puntaje base igual que en leaderboard
+                    const levelScore = score(rank, 100, lvl.percentToQualify);
+                    totalReward += levelScore;
+                } else {
+                    console.warn(`Nivel no encontrado en la lista: ${levelName}`);
+                }
+            });
+
+            // Calcular promedio de ranks (menor = más difícil)
+            const avgRank = ranks.length > 0
+                ? ranks.reduce((a, b) => a + b, 0) / ranks.length
+                : 999;
+
+            // multiplicador según dificultad promedio
+            let multiplier = 1.0;
+            if (avgRank <= 10) multiplier = 1.2;       // packs muy difíciles
+            else if (avgRank <= 25) multiplier = 1.15; // packs difíciles
+            else if (avgRank <= 45) multiplier = 1.1;  // packs medios
+            else if (avgRank <= 60) multiplier = 1.05; // packs normales
+            else multiplier = 0.9;                    // packs fáciles
+
+            // Calcular reward final
+            pack.reward = round(totalReward * multiplier);
+        });
+
         return packs;
     } catch (err) {
         console.error('Error fetching packs:', err);
