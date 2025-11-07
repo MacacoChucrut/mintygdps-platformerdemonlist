@@ -24,6 +24,17 @@ export default {
                 <p>
                     Just beat every level in a pack and submit your records. Once your completions have been accepted, the pack will automatically appear on your profile.
                 </p>
+                
+                    <div class="packs-suggest">
+                      <a 
+                        href="https://forms.gle/rTFFLUat1cmPyjZz5" 
+                        target="_blank" 
+                        class="submit-btn"
+                      >
+                        Suggest Pack
+                      </a>
+                    </div>
+                
             </div>
             <section class="packs-container">
                 <div class="packs-grid">
