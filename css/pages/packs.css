@@ -232,3 +232,25 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+.packs-suggest {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.packs-suggest .submit-btn {
+    display: inline-block;
+    background-color: var(--color-on-primary);
+    color: var(--color-primary);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 500;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: transform 100ms ease;
+}
+
+.packs-suggest .submit-btn:hover {
+    transform: translateY(-2px);
+}
