@@ -1,16 +1,12 @@
 .page-packs {
     background-color: var(--color-background);
     width: 100%;
-    min-height: auto;
-    padding: 2rem 4rem;
+    padding: 1.5rem 0;
     display: block;
     overflow: visible;
 }
 
 .packs-header {
-    position: sticky;
-    top: 0;
-    z-index: 5;
     max-width: 60rem;
     margin: 0 auto;
     text-align: left;
@@ -50,10 +46,11 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 2rem;
+    padding: 0 2rem;
     width: 100%;
-    padding: 2rem 0 2rem
     justify-content: flex-start;
     scroll-behavior: smooth;
+    cursor: grab;
 }
 
 .packs-grid:active {
@@ -65,13 +62,10 @@
     background: var(--color-background);
     border: 3px solid var(--pack-color, var(--color-primary));
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    margin: 1rem 0 10rem;
-
+    margin: 1rem 0 6rem;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeUp 0.5s ease forwards;
@@ -101,7 +95,7 @@
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--color-on-background);
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -133,7 +127,6 @@
     gap: 0.75rem;
 }
 
-/* each level from a pack */
 .level-item {
     display: flex;
     align-items: center;
@@ -159,7 +152,6 @@
     transition: color 0.15s ease;
 }
 
-/* level thumbnails */
 .level-thumb {
     width: 5rem;
     height: 3rem;
@@ -167,6 +159,8 @@
     border-radius: 0.5rem;
     flex-shrink: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    user-drag: none;
 }
 
 .level-name {
@@ -181,12 +175,9 @@
     white-space: nowrap;
 }
 
-/* --- pack reward --- */
 .pack-reward {
-    margin-top: 1.5rem;
-    font-weight: 500;
-    color: var(--color-on-background);
-    font-size: 0.95rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -222,7 +213,6 @@ header {
     z-index: 1000;
 }
 
-/* Compensar el espacio que ocupa el header */
 body {
     padding-top: 4rem;
 }
@@ -249,8 +239,25 @@ body {
     border-radius: 0.5rem;
     text-decoration: none;
     transition: transform 100ms ease;
+    margin-bottom: -1rem
 }
 
 .packs-suggest .submit-btn:hover {
     transform: translateY(-2px);
+}
+
+.pack-reward.warning {
+    margin-top: 1rem;
+    color: var(--color-on-background);
+}
+
+.level-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.level-content .link {
+    display: flex;
+    align-items: center;
 }
