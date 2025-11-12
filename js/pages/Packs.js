@@ -124,6 +124,8 @@ export default {
                 })
                 .filter(Boolean);
 
+            levelObjects.sort((a, b) => a.rank - b.rank);
+
             return {
                 ...pack,
                 levelObjects,
