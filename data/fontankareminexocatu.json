@@ -1,6 +1,6 @@
 {
     "id": 3283,
-    "name": "fontankareminexocatu",
+    "name": "fontankareminexocatu (Solo)",
     "author": "Dino",
     "creators": ["Dino"],
     "verifier": "Dino",
@@ -62,5 +62,5 @@
             "mobile": false
         }
     ],
-    "tags": ["Robot", "Ship", "Timings", "2P"]
+    "tags": [2P", "Robot", "Ship", "Timings", "2P"]
 }
