@@ -1,0 +1,17 @@
+{
+    "id": 4103,
+    "name": "1 Point 0 Rooms",
+    "creators": ["KindaExpert"],
+    "verifier": "KindaExpert",
+    "verification": "#",
+    "percentToQualify": "100",
+    "records": [
+        {
+            "user": "Herobrain",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        }
+    ],
+    "tags": ["Cube", "Jetpack", "Rooms"]
+}
