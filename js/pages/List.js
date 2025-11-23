@@ -224,7 +224,6 @@ export default {
                     <p>Verifications must be uploaded in the format of a youtube video.</p>
                     <p>Cheat indicator is required if a modmenu with the feature is being used.</p>
                     <p>The level complete endscreen must be shown.</p>
-                    <p>Physics Bypass is NOT allowed.</p>
                     <p>Click Between Frames and FPS/TPS bypass are allowed, however, Physics Bypass is NOT allowed. </p>
 
                 </div>
