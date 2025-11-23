@@ -20,8 +20,7 @@ function getRankColor(rank) {
     if (rank === 3) return '#CD7F32';
     if (rank === 4) return '#4FD1C5';
     if (rank === 5) return '#9F7AEA';
-    if (rank > 200) return 'var(--color-extended)';
-    if (rank > 100) return 'var(--color-legacy)';
+    if (rank > 75) return 'var(--color-legacy)';
     return null;
 }
 
@@ -57,13 +56,7 @@ export default {
                                 </td>
                             </tr>
 
-                            <tr v-if="item.originalIndex + 1 === 101" class="separator-row">
-                                <td colspan="2">
-                                    <div class="separator-text">EXTENDED</div>
-                                </td>
-                            </tr>
-
-                            <tr v-if="item.originalIndex + 1 === 201" class="separator-row">
+                            <tr v-if="item.originalIndex + 1 === 76" class="separator-row">
                                 <td colspan="2">
                                     <div class="separator-text">LEGACY</div>
                                 </td>
@@ -159,7 +152,7 @@ export default {
 
                     <h2>Victors ({{ level.records?.length || 0 }})</h2>
 
-                    <p v-if="selected + 1 > 200">
+                    <p v-if="selected + 1 > 75">
                         This level has fallen into the Legacy List and no longer accepts new records.
                     </p>
 
