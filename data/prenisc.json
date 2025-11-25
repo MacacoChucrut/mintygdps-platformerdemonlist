@@ -1,7 +1,6 @@
 {
     "id": 2743,
     "name": "Prenisc",
-    "author": "Dino",
     "creators": ["Dino"],
     "verifier": "Dino",
     "verification": "#",
@@ -93,6 +92,12 @@
         },
         {
             "user": "goofyman",
+            "link": "#",
+            "percent": 100,
+            "mobile": false
+        },
+        {
+            "user": "Hcmaxi",
             "link": "#",
             "percent": 100,
             "mobile": false
