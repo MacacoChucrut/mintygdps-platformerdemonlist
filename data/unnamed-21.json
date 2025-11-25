@@ -42,6 +42,12 @@
             "link": "https://youtu.be/8gz4C0HvR4g?si=60nF5-PpKA7TNYA5",
             "percent": 100,
             "mobile": true
+        },
+        {
+            "name": "Hcmaxi",
+            "link": "",
+            "percent": 100,
+            "mobile": false
         }
     ],
     "tags": ["Robot", "Cube", "Timings"]
