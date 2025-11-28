@@ -1,6 +1,5 @@
 .page-leaderboard-container {
-    display: flex;
-    top: 0;
+    display: block;
 }
 
 .page-leaderboard {
