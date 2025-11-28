@@ -1,8 +1,12 @@
 [
     {
+        "name": "A01 Pack",
+        "levels": ["Unnamed 21", "Epitet", "Dignity"]
+        "color": "#add8ff"
+    },
+    {
         "name": "pancakepuzzle Pack",
         "levels": ["summer", "summer II", "loppa"],
-        "reward": 500,
         "color": "#f3e"
     }
 ]
