@@ -127,7 +127,6 @@
     text-decoration: underline;
 }
 
-/* --- Completed Packs in Player Profile --- */
 .page-leaderboard .player .packs-list {
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +136,6 @@
     list-style: none;
 }
 
-/* Cada pack como una etiqueta */
 .page-leaderboard .player .packs-list li {
     font-family: "Lexend Deca", sans-serif;
     display: inline-flex;
@@ -153,7 +151,14 @@
     transition: all 0.15s ease;
 }
 
-/* --- Personalized Pack Colors (Leaderboard) --- */
 .page-leaderboard .player .packs-list li[data-color] {
     border-color: var(--pack-color, var(--color-primary));
+}
+
+.uncompleted {
+    color: #aaa;
+}
+
+.uncompleted-title {
+    color: #aaa;
 }
