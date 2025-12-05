@@ -7,7 +7,7 @@
 }
 
 .packs-header {
-    max-width: 60rem;
+    max-width: 50rem;
     margin: 0 auto;
     text-align: left;
     display: block;
@@ -40,56 +40,15 @@
     align-items: center;
 }
 
-.packs-grid {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 2rem;
-    padding: 0 2rem;
-    width: 100%;
-    justify-content: flex-start;
-    scroll-behavior: smooth;
-    cursor: grab;
-}
-
-.packs-grid:active {
-    cursor: grabbing;
-}
-
 .pack-card {
-    flex: 0 0 22rem; /* ← ancho fijo */
     background: var(--color-background);
     border: 3px solid var(--pack-color, var(--color-primary));
     border-radius: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 6rem;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 0.5s ease forwards;
 }
 
-.pack-card:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.pack-card:nth-child(3) {
-  animation-delay: 0.2s;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.pack-card:hover {
-    transform: translateY(-4px);
-}
-
-/* pack info */
 .pack-meta h2 {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 700;
@@ -136,6 +95,7 @@
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     transition: background-color 0.15s ease;
+    margin-top: 1rem;
 }
 
 .level-item:hover {
@@ -184,15 +144,6 @@
     .page-packs {
         padding: 1.5rem;
     }
-
-    .packs-grid {
-        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    }
-
-    .level-thumb {
-        width: 4.5rem;
-        height: 2.5rem;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -217,12 +168,6 @@ body {
     padding-top: 4rem;
 }
 
-.no-select {
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
 .packs-suggest {
     text-align: center;
     margin-top: 1.5rem;
@@ -231,8 +176,8 @@ body {
 
 .packs-suggest .submit-btn {
     display: inline-block;
-    background-color: var(--color-on-primary);
-    color: var(--color-primary);
+    background-color: var(--color-on-background);
+    color: var(--color-background);
     font-family: "Lexend Deca", sans-serif;
     font-weight: 500;
     padding: 0.6rem;
@@ -260,4 +205,44 @@ body {
 .level-content .link {
     display: flex;
     align-items: center;
+}
+
+.packs-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.pack-tab {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid;
+    border-radius: 0.6rem;
+    background: transparent;
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.pack-tab:hover {
+    transform: translateY(-2px);
+}
+
+.pack-tab.active {
+    background: rgba(255,255,255,0.05);
+    font-weight: 950;
+}
+
+.pack-view {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pack-card.big {
+    max-width: 32rem;
+    width: 100%;
 }
