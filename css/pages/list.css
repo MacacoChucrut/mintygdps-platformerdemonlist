@@ -21,7 +21,7 @@
     width: 100%;
 }
 .page-list .list .level button {
-    background-color: var(--color-background);
+    background-color: transparent;
     color: var(--color-on-background);
     border: none;
     border-radius: 0.5rem;
@@ -39,6 +39,7 @@
 .page-list .list .level button:hover {
     background-color: var(--color-background-hover);
     color: var(--color-on-background-hover);
+    outline: solid 2px var(--color-primary);
 }
 .page-list .list .level.active button {
     background-color: var(--color-primary);
@@ -174,11 +175,6 @@
 }
 
 .search-container {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    border-radius: 1rem;
-    box-shadow: 0 -2.5rem 0 var(--color-background);
     margin-bottom: 0.5rem
 }
 
@@ -190,6 +186,7 @@
     border: none;
     background: var(--color-background-hover);
     outline: none;
+    box-sizing: border-box;
 }
 
 .tab {
