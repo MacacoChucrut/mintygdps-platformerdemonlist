@@ -179,7 +179,7 @@
 }
 
 .search-input {
-    box-shadow: 0 1rem 1rem var(--color-background);
+    box-shadow: 0 0.5rem 1rem var(--color-background);
     width: 100%;
     padding: 15px 20px;
     border-radius: 1rem;
