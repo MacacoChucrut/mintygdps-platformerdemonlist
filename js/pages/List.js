@@ -55,8 +55,8 @@ export default {
                                     <div class="separator-text">MAIN</div>
                                 </td>
                             </tr>
-
-                            <tr v-if="item.originalIndex + 1 === 76" class="separator-row">
+                            
+                            <tr v-if="item.originalIndex + 1 === 101" class="separator-row">
                                 <td colspan="2">
                                     <div class="separator-text">LEGACY</div>
                                 </td>
@@ -65,7 +65,12 @@ export default {
                             <tr>
                                 <td class="rank">
                                     <p class="type-label-lg"
-                                       :style="{ color: getRankColor(item.originalIndex + 1) || 'inherit' }">
+                                       :style="{
+                                           color: getRankColor(item.originalIndex + 1) || 'inherit',
+                                           textShadow: getRankColor(item.originalIndex + 1)
+                                             ? '0 0 20px ' + getRankColor(item.originalIndex + 1)
+                                             : 'none'
+                                       }">
                                         #{{ item.originalIndex + 1 }}
                                     </p>
                                 </td>
@@ -152,7 +157,7 @@ export default {
 
                     <h2>Victors ({{ level.records?.length || 0 }})</h2>
 
-                    <p v-if="selected + 1 > 75">
+                    <p v-if="selected + 1 > 100">
                         This level has fallen into the Legacy List and no longer accepts new records.
                     </p>
 
@@ -202,7 +207,7 @@ export default {
                     </div>
 
                     <template v-if="editors">
-                        <h3>List Editors</h3>
+                        <a href="file_helper.html" target="_blank"><h3>List Editors</h3></a>
                         <ol class="editors">
                             <li v-for="editor in editors">
                                 <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" 
@@ -220,11 +225,13 @@ export default {
                         </ol>
                     </template>
 
-                    <h3>Submission Rules</h3>
-                    <p>Verifications must be uploaded in the format of a youtube video.</p>
-                    <p>Cheat indicator is required if a modmenu with the feature is being used.</p>
-                    <p>The level complete endscreen must be shown.</p>
-                    <p>Click Between Frames and FPS/TPS bypass are allowed, however, Physics Bypass is NOT allowed. </p>
+                    <h3>Submission Requirements</h3>
+                    <p>Video proof is required for Top 40 Demons.</p>
+                    <p>Verifications must be uploaded as a YouTube video.</p>
+                    <p>Cheat indicator is required if a modmenu with that feature is used.</p>
+                    <p>Secret routes or bug routes are not allowed.</p>
+                    <p>The completion screen must be visible.</p>
+                    <p>CBF and FPS/TPS bypass allowed, physics bypass is NOT allowed.</p>
 
                 </div>
             </div>
