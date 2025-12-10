@@ -226,7 +226,7 @@ export default {
                     </template>
 
                     <h3>Submission Requirements</h3>
-                    <p>Video proof is required for Top 40 Demons.</p>
+                    <p>Video proof is required for Insane and Extreme Demons</p>
                     <p>Verifications must be uploaded as a YouTube video.</p>
                     <p>Cheat indicator is required if a modmenu with that feature is used.</p>
                     <p>Secret routes or bug routes are not allowed.</p>
