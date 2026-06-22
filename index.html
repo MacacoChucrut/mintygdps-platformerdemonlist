@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=1024" />
-        <title>MGDPS Platformer List</title>
+        <title>MGDPS Pemonlist</title>
         
         <link rel="icon" href="/list_icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +28,7 @@
     <body id="app">
         <header :class="{ dark: store.dark }">
             <div class="logo">
-                <h2>MGDPS PL</h2>
+                <h2>MGDPS Pemonlist</h2>
             </div>
             <nav class="nav">
                 <router-link class="nav__tab" to="/">
@@ -40,18 +40,6 @@
                 <router-link class="nav__tab" to="/packs">
                     <span class="type-label-lg">Packs</span>
                 </router-link>
-                <div class="nav__actions">
-                    <a
-                        class="nav__cta type-label-lg"
-                        href="https://forms.gle/P86PymkBtyowdm3w5"
-                        target="_blank"
-                        >Submit Record</a>
-                    <a
-                        class="nav__cta type-label-lg"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScYydrMmspuK00emA_by4ZoJjW2hYuLKnuvFsam5TfXsHHbWQ/viewform?usp=sharing&ouid=114556645125894296313"
-                        target="_blank"
-                        >Submit Level</a>
-                </div>
             </nav>
         </header>
         <router-view :class="{ dark: store.dark }"></router-view>
