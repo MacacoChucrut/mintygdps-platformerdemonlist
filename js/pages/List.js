@@ -231,7 +231,8 @@ export default {
                     <p>Cheat indicator is required if a modmenu with that feature is used.</p>
                     <p>Secret routes or bug routes are not allowed.</p>
                     <p>The completion screen must be visible.</p>
-                    <p>CBF and FPS/TPS bypass allowed, physics bypass is NOT allowed.</p>
+                    <p>CBF, CBS, COS and FPS Bypass are allowed.</p>
+                    <p>TPS/Physics Bypass is not allowed.</p>
 
                 </div>
             </div>
